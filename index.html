@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
-  <body>
+  <body class="body">
     <header class="header">
       <nav class="header__menu">
         <ul class="header__links-list">
           <li class="header__links-list-item header__links-list-item_no-bullit">
-            <a class="header__link">главная</a>
+            <a class="header__link" href="#0">главная</a>
           </li>
           <li class="header__links-list-item">
             <a class="header__link" href="#0">посмотреть лоты</a>
@@ -43,9 +43,15 @@
       <section class="cover">
         <div class="overlay">
           <h1 class="cover__title">
-            <span class="aligned-text">о<span class="aligned-text_indent">но</span></span>
-            <span class="aligned-text aligned-text_center">те<span class="aligned-text_indent">бе</span></span>
-            <span class="aligned-text aligned-text_right"><span class="aligned-text_indent">н</span>адо</span>
+            <div class="aligned-text_indent">
+              <span>о<span class="aligned-text">но</span></span>
+            </div>
+            <div class="aligned-text_indent aligned-text_center">
+              <span>те<span class="aligned-text">бе</span></span>
+            </div>
+            <div class="aligned-text_indent aligned-text_right">
+              <span class="aligned-text">н</span><span>адо</span>
+            </div>
           </h1>
           <div class="cover__description">
             <p class="cover__description-text">
@@ -58,66 +64,57 @@
       <section class="lost">
         <h2 class="lots__heading">Лоты</h2>
         <div class="lots__card-list">
-          <div class="card_type_film">
-            <a href="#">
-              <div class="overlay">
-                <article class="card">
-                  <h3 class="card_heading">
-                    Фильм режиссёра, который бросил киношколу
-                  </h3>
+          <a href="#">
+            <article class="card card_type_film">
+              <h3 class="card__heading">
+                Фильм режиссёра, который бросил киношколу
+              </h3>
 
-                  <p class="card_text">
-                    Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
-                    ставка, если бы вы не знали, что режиссёр — Пол Томас
-                    Андерсон?
-                  </p>
-                </article>
-              </div>
-            </a>
-          </div>
-          <div class="card_type_book">
-            <a href="#">
-              <div class="overlay">
-                <article class="card">
-                  <h3 class="card_heading">
-                    Книга, где описан один скучный день из жизни рекламного
-                    агента
-                  </h3>
-                  <p class="card_text">
-                    Объёмом почти в тысячу страниц. Иногда без знаков препинания
-                    и с переходами на древнеанглийский. В ней одновременно
-                    рассказывается о 16 июня 1904 года и об истории литературы,
-                    начиная с античных времён. И это всё накладывается на
-                    эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
-                    Джеймса Джойса?
-                  </p>
-                </article>
-              </div>
-            </a>
-          </div>
-          <div class="card_type_picture">
-            <a href="#">
-              <div class="overlay">
-                <article class="card">
-                  <h3 class="card_heading">
-                    Картина, которую повторит даже 5-летний сын маминой подруги
-                  </h3>
-                  <p class="card_text">
-                    Ну действительно, там линия, тут кружочек, а здесь и вовсе
-                    что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
-                    котиков… Сколько бы вы на такое поставили, если бы не знали,
-                    что это — одна из революционных работ Кандинского?
-                  </p>
-                </article>
-              </div>
-            </a>
-          </div>
+              <p class="card__text">
+                Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+              </p>
+              <div class="overlay__text"></div>
+            </article>
+          </a>
+
+          <a href="#">
+            <article class="card card_type_book">
+              <h3 class="card__heading">
+                Книга, где описан один скучный день из жизни рекламного агента
+              </h3>
+              <p class="card__text">
+                Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
+                переходами на древнеанглийский. В ней одновременно
+                рассказывается о 16 июня 1904 года и об истории литературы,
+                начиная с античных времён. И это всё накладывается на эпическую
+                поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса
+                Джойса?
+              </p>
+              <div class="overlay__text"></div>
+            </article>
+          </a>
+
+          <a href="#">
+            <article class="card card_type_picture">
+              <h3 class="card__heading">
+                Картина, которую повторит даже 5-летний сын маминой подруги
+              </h3>
+              <p class="card__text">
+                Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+                котиков… Сколько бы вы на такое поставили, если бы не знали, что
+                это — одна из революционных работ Кандинского?
+              </p>
+              <div class="overlay__text"></div>
+            </article>
+          </a>
         </div>
         <a class="lots__look-more-link" href="#0">посмотреть больше</a>
       </section>
       <section class="about">
         <div class="about__logo">
-          <img src="/images/logo-white.svg" alt="логот ип" />
+          <img src="images/logo-white.svg" alt="логот ип" />
         </div>
         <div class="about__column">
           <h2 class="about__title">Об аукционе</h2>
@@ -150,8 +147,8 @@
       </address>
 
       <nav class="footer__menu">
-        <ul class="footer__menu-list">
-          <li class="footer__menu-list-item footer__links-list-item_no-bullit">
+        <ul class="footer__menu-list footer__links-list-item_no-bullit">
+          <li class="footer__menu-list-item">
             <a class="footer__link footer__link_active">главная</a>
           </li>
           <li class="footer__menu-list-item">
